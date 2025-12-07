@@ -189,42 +189,12 @@ Platform e-commerce modern untuk menjual produk digital (akun premium) dengan si
 - **Image Processing**: Sharp untuk optimasi gambar
 - **Caching**: SWR untuk data fetching
 
-### WhatsApp Gateway
-- **Library**: Baileys untuk koneksi WhatsApp Web
-- **Auth State**: MongoDB session storage
-- **Message Handling**: Queue system with retry mechanism
-- **Bot Handler**: Full e-commerce bot dengan ordering
-- **Notification Service**: Admin & customer notifications
-- **Media Support**: Gambar, PDF dan dokumen
-
-### Telegram Bot
-- **Library**: Telegraf v4
-- **Features**: Inline keyboards, callbacks, sessions
-- **Database Sync**: User registration ke MongoDB
-- **Cart System**: Session-based cart management
-
-### Payment Processing
-- **Wahdx API (Orderkuota)**: QRIS integration utama
-- **Tripay**: Alternative QRIS gateway
-- **Payment Status**: Auto-check dengan interval 10 detik
-- **Payment Expiry**: Auto-cancel untuk expired payments
-- **Transaction Logging**: MongoDB transaction support
-- **QR Code**: qrcode library untuk generate QR
-
-### DevOps & Deployment
-- **Version Control**: Git + GitHub
-- **Process Manager**: PM2 untuk production
-- **Reverse Proxy**: Nginx support
-- **SSL**: Certbot/Let's Encrypt support
-
----
-
 ## 📋 Prerequisites
 
 - Node.js 20.x
 - npm 10.x
 - MongoDB Atlas account atau MongoDB local
-- ORKUT credentials untuk QRIS API (menggunakan Wahdx-API)
+- ORKUT credentials untuk QRIS API (menggunakan [Wahdx-api](https://api.wahdx.co))
 - Tripay credentials (jika menggunakan Tripay)
 - Telegram Bot Token (untuk Telegram Bot Store)
 
