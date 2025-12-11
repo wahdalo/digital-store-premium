@@ -23,6 +23,14 @@ Platform e-commerce modern untuk menjual produk digital (akun premium) dengan si
 
 ## 🚀 Fitur Utama
 
+Sistem Digital Store mendukung 3 jenis tipe produk yang berbeda, masing-masing memiliki karakteristik, alur kerja, dan use case yang unik:
+
+| Tipe Produk | Deskripsi Singkat | Format Output | Contoh Penggunaan |
+|-------------|-------------------|---------------|-------------------|
+| `automatic` | Akun digital dari database, dikirim otomatis | Email + Password | Netflix, Spotify, Akun lain yang sudah siap |
+| `manual` | Akun diinput manual oleh admin | Email + Password | Custom accounts, VIP services |
+| `automatic-key` | Key/kode dari database, dikirim otomatis | Key saja | Game Key, CDKey, License, Code redeem |
+
 ### 🛒 Customer Features
 - **Homepage Modern** dengan UI responsive dan animasi menarik
 - **Banner Carousel** dengan auto-slide dan drag/swipe support
@@ -66,7 +74,6 @@ Platform e-commerce modern untuk menjual produk digital (akun premium) dengan si
 - **Menu Command** `/menu` untuk lihat semua produk
 - **Product Selection** dengan nomor atau teks
 - **Variant Selection** support
-- **IID Input Support** untuk produk yang memerlukan input custom (GetCID)
 - **Order Confirmation** dengan konfirmasi ya/tidak
 - **Cancel Command** `/cancel` untuk membatalkan proses
 - **Help Command** `/help` untuk panduan
@@ -119,20 +126,17 @@ Platform e-commerce modern untuk menjual produk digital (akun premium) dengan si
 - Tipe produk: 
   - **automatic** - Akun otomatis dari database (Netflix, Spotify, dll)
   - **manual** - Input akun manual oleh admin
-  - **automatic-api** - Produk dengan API eksternal (GetCID)
+  - **automatic-key** -  Key/kode dari database (CDKey, License, Code redeem)
 - Pengelolaan stok akun dengan sistem FIFO
-- Upload akun massal via CSV/Excel
-- Deteksi akun duplikat otomatis
 - **Product Variants** - Support multi-varian dengan harga & durasi berbeda
 
 ### 6. Sistem Pengiriman Akun
 - Pengiriman otomatis via WhatsApp setelah pembayaran terverifikasi
-- Format pengiriman akun yang rapi (email:password)
+- Format pengiriman akun yang rapi (email:password & key code)
 - Validasi akun sebelum pengiriman
 - Opsi pengiriman ulang jika terjadi kegagalan
 - Riwayat pengiriman terekam di dashboard admin
 - Notifikasi ke admin saat order sukses
-- **GetCID Integration** - Auto-process GetCID setelah payment sukses
 
 ### 7. Banner Carousel System
 - Manajemen banner dari admin dashboard
